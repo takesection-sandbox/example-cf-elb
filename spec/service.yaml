@@ -1,0 +1,27 @@
+openapi: 3.0.2
+info:
+  version: 0.1.0
+  title: example-service
+servers:
+  - url: 'http://localhost:8080/example'
+paths:
+  /hello:
+    get:
+      description: index
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Hello'
+      tags:
+        - example
+components:
+  schemas:
+    Hello:
+      type: object
+      additionalProperties:
+        type: string
+      x-tags:
+        - example

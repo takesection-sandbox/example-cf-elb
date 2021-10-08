@@ -1,0 +1,14 @@
+inputSpec: spec/service.yaml
+generatorName: spring
+outputDir: out/spring-controller
+additionalProperties:
+  modelPackage: com.pigumer.example.controller.model
+  apiPackage: com.pigumer.example.controller.api
+  invokerPackage: com.pigumer.example.controller.api
+  groupId: com.pigumer.example
+  dateLibrary: java8
+  java8: true
+  configPackage: com.pigumer.example.controller.configuration
+  library: spring-boot
+  artifactId: example-service-controller
+  snapshotVersion: true
